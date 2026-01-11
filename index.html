@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite PS Rental - Tempat Main PS3, PS4, PS5 Paling Nyaman di Jogja</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="fixed w-full z-50 glass-effect top-0 border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 md:h-20">
+                <div class="flex items-center text-left">
+                    <span class="text-xl md:text-2xl font-bold gradient-text tracking-tighter uppercase">ELITE PS</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-6 font-medium">
+                        <a href="#home" class="hover:text-sky-400 transition">Beranda</a>
+                        <a href="#layanan" class="hover:text-sky-400 transition">Tarif</a>
+                        <a href="#cara-sewa" class="hover:text-sky-400 transition">Cara Main</a>
+                        <a href="#tentang" class="hover:text-sky-400 transition">Tentang</a>
+                        <a href="#kontak" class="hover:text-sky-400 transition">Lokasi</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button onclick="toggleMenu()" class="text-gray-300 hover:text-white p-2">
+                        <i id="menu-icon" class="fas fa-bars text-2xl transition-transform duration-300"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden glass-effect absolute w-full left-0 border-b border-white/10 shadow-2xl transition-all">
+            <div class="px-6 py-8 space-y-4">
+                <a href="#home" onclick="toggleMenu()" class="block text-lg font-semibold hover:text-sky-400 border-b border-white/5 pb-2">Beranda</a>
+                <a href="#layanan" onclick="toggleMenu()" class="block text-lg font-semibold hover:text-sky-400 border-b border-white/5 pb-2">Tarif Main</a>
+                <a href="#cara-sewa" onclick="toggleMenu()" class="block text-lg font-semibold hover:text-sky-400 border-b border-white/5 pb-2">Cara Main</a>
+                <a href="#tentang" onclick="toggleMenu()" class="block text-lg font-semibold hover:text-sky-400 border-b border-white/5 pb-2">Tentang Kami</a>
+                <a href="#kontak" onclick="toggleMenu()" class="block text-lg font-semibold hover:text-sky-400 pb-2">Lokasi & Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="min-h-[90vh] md:min-h-screen flex items-center pt-24 md:pt-32 pb-16 relative overflow-hidden">
+        <div id="parallax-bg" class="absolute inset-0 z-0 opacity-20 transform scale-110">
+            <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80" alt="Interior Rental PS" class="w-full h-full object-cover">
+        </div>
+        <div class="max-w-7xl mx-auto px-6 w-full relative z-10">
+            <div class="reveal max-w-2xl text-left">
+                <div class="inline-block bg-sky-500/20 text-sky-400 px-4 py-1 rounded-full text-[10px] md:text-xs font-bold mb-4 tracking-widest uppercase border border-sky-500/30">
+                    Premium Gaming Spot Jogja
+                </div>
+                <h1 class="text-4xl md:text-7xl font-extrabold mb-6 leading-tight">
+                    Level Up Your <br class="hidden md:block"><span class="gradient-text">Gaming Experience</span>
+                </h1>
+                <p class="text-gray-400 text-base md:text-lg mb-8 md:mb-12 max-w-xl leading-relaxed">
+                    Satu-satunya tempat rental PlayStation dengan kenyamanan maksimal. Ruangan Full AC, TV 4K HDR, dan koleksi game viral terlengkap di Yogyakarta!
+                </p>
+                <div class="flex flex-col sm:flex-row justify-start gap-4">
+                    <a href="https://wa.me/6282322447900?text=Halo%20Admin%20Elite%20PS" target="_blank" class="bg-sky-500 hover:bg-sky-600 px-8 py-4 rounded-xl font-bold flex items-center justify-center gap-3 btn-glow transition shadow-lg shadow-sky-500/20 text-center">
+                        <i class="fab fa-whatsapp text-xl"></i> Cek Unit Kosong
+                    </a>
+                    <a href="#kontak" class="border-2 border-sky-500/50 text-sky-400 hover:bg-sky-500 hover:text-white px-8 py-4 rounded-xl font-bold transition text-center backdrop-blur-sm">
+                        Lihat Lokasi
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="fixed bottom-4 right-4 md:bottom-8 md:right-8 z-[999] group flex flex-col items-end gap-3">
+        <button id="back-to-top" onclick="window.scrollTo(0,0)" class="bg-slate-800/80 border border-white/10 w-10 h-10 md:w-12 md:h-12 rounded-xl flex items-center justify-center text-sky-400 hover:bg-sky-500 hover:text-white transition-all shadow-xl">
+            <i class="fas fa-chevron-up text-sm"></i>
+        </button>
+        <div class="relative flex items-center">
+            <a href="https://wa.me/6282322447900" target="_blank" class="wa-floating-btn bg-green-500 hover:bg-green-600 w-14 h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center text-white text-2xl md:text-3xl shadow-2xl transition-all hover:scale-110 active:scale-95">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
